@@ -22,7 +22,8 @@ let loginInterval = null
 /> */}
 
 let interval
-const Form = ({webStyle={}, nativeStyle={}, timer=false, refInput, rand, setRand, btn = true, contentContainerStyle, overflow, mAutoFocus, mt, bgcolor = '#f0f0f0', f, e, p, cp, m, ch, c, t, pr, im, i, edit, s, ph, $code, code, setcode,
+const Form = ({webStyle={}, nativeStyle={}, timer=false, refInput, rand, setRand, btn = true, contentContainerStyle, overflow, mAutoFocus, mt, bgcolor = '#f0f0f0', 
+f, e, p, cp, m, ch, c, t, pr, im, i, edit, s, ph, $code, code, setcode,
   title, settitle, price, setprice, phone, setphone,
   imageUrl, setImageUrl, info, setinfo
   , style, fullname, setfullname,
@@ -125,7 +126,7 @@ const Form = ({webStyle={}, nativeStyle={}, timer=false, refInput, rand, setRand
   var cap = c ? (rand == captcha) ? true : false : true
   var titl = t ? newObj.title === title : true
   var prc = pr ? newObj.price === price : true
-  var img = im ? !edit ? newObj.imageUrl === imageUrl : true : true
+  var img = im ? (!edit ? newObj.imageUrl === imageUrl : true) : true
   var inf = i ? newObj.info === info : true
 
 
