@@ -23,6 +23,8 @@
         <>
 
    <Div>
+ {/* window.open('https://free-learn.ir', 'وبگو | آموزش برنامه نویسی و مهارتهای وب', 'width=800, height=600, resizable=0, left=0, top=0, location=0, menubar=0, scrollbars=0, toolbar=0, titlebar=0, status=0'); */}
+
     <Icon name='eye' size={30} />
     <Form i onClick={()=>alert(9)} {...p} />
     <P id='salam' onClick={() => p.navigation.navigate('Secend')}>go to secend</P>
